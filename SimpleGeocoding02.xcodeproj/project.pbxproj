@@ -7,14 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0514F57C2354CC460050031F /* CLPlacemark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0514F57B2354CC460050031F /* CLPlacemark.swift */; };
+		05CF5E6E235769CB00698342 /* PinData.plist in Resources */ = {isa = PBXBuildFile; fileRef = 05CF5E6D235769CB00698342 /* PinData.plist */; };
 		05F0148523543E60008D5E77 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F0148423543E60008D5E77 /* AppDelegate.swift */; };
 		05F0148723543E60008D5E77 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F0148623543E60008D5E77 /* ViewController.swift */; };
 		05F0148A23543E60008D5E77 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05F0148823543E60008D5E77 /* Main.storyboard */; };
 		05F0148C23543E61008D5E77 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05F0148B23543E61008D5E77 /* Assets.xcassets */; };
 		05F0148F23543E61008D5E77 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05F0148D23543E61008D5E77 /* LaunchScreen.storyboard */; };
+		05F0149823543ECA008D5E77 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05F0149723543ECA008D5E77 /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0514F57B2354CC460050031F /* CLPlacemark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLPlacemark.swift; sourceTree = "<group>"; };
+		05CF5E6D235769CB00698342 /* PinData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = PinData.plist; path = "../../../Dropbox/2019/Lec-02/iOS/MapKit/03SimpleMapData/03SimpleMap/PinData.plist"; sourceTree = "<group>"; };
 		05F0148123543E60008D5E77 /* SimpleGeocoding02.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleGeocoding02.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		05F0148423543E60008D5E77 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		05F0148623543E60008D5E77 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +27,7 @@
 		05F0148B23543E61008D5E77 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		05F0148E23543E61008D5E77 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		05F0149023543E61008D5E77 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		05F0149723543ECA008D5E77 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				05F0149823543ECA008D5E77 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +47,7 @@
 			children = (
 				05F0148323543E60008D5E77 /* SimpleGeocoding02 */,
 				05F0148223543E60008D5E77 /* Products */,
+				05F0149623543EC9008D5E77 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +62,24 @@
 		05F0148323543E60008D5E77 /* SimpleGeocoding02 */ = {
 			isa = PBXGroup;
 			children = (
+				0514F57B2354CC460050031F /* CLPlacemark.swift */,
 				05F0148423543E60008D5E77 /* AppDelegate.swift */,
 				05F0148623543E60008D5E77 /* ViewController.swift */,
+				05CF5E6D235769CB00698342 /* PinData.plist */,
 				05F0148823543E60008D5E77 /* Main.storyboard */,
 				05F0148B23543E61008D5E77 /* Assets.xcassets */,
 				05F0148D23543E61008D5E77 /* LaunchScreen.storyboard */,
 				05F0149023543E61008D5E77 /* Info.plist */,
 			);
 			path = SimpleGeocoding02;
+			sourceTree = "<group>";
+		};
+		05F0149623543EC9008D5E77 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				05F0149723543ECA008D5E77 /* MapKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -122,6 +140,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				05CF5E6E235769CB00698342 /* PinData.plist in Resources */,
 				05F0148F23543E61008D5E77 /* LaunchScreen.storyboard in Resources */,
 				05F0148C23543E61008D5E77 /* Assets.xcassets in Resources */,
 				05F0148A23543E60008D5E77 /* Main.storyboard in Resources */,
@@ -136,6 +155,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				05F0148723543E60008D5E77 /* ViewController.swift in Sources */,
+				0514F57C2354CC460050031F /* CLPlacemark.swift in Sources */,
 				05F0148523543E60008D5E77 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
